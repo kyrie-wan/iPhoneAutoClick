@@ -1,0 +1,63 @@
+
+tell application "Safari"
+	
+	do JavaScript "$('#store').find('li:nth-child(3)').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#store').find('li:nth-child(3)').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#model').find('.button').click()" in front document
+	delay (0.3)
+	do JavaScript "$('#color').find('.color-gold .button').click()" in front document
+	do JavaScript "$('#carrierDiv').find('li').removeClass('disabled-carrier')" in front document
+	delay (0.05)
+	do JavaScript "$('#carrierDiv').find('.unlocked .button').click()" in front document
+	do JavaScript "$('#carrierDiv').find('li').removeClass('disabled')" in front document
+	delay (0.2)
+	do JavaScript "$('#carrierDiv').find('.capacity-row-wrapper').find('li:nth-child(1)').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#quantity').find('li[data-tag=2]').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#quantity').find('li[data-tag=2]').click()" in front document
+	delay (0.05)
+	#**************************************
+	#**************************************
+	#**************************************	
+	do JavaScript "$('#firstname').val('your first name')" in front document
+	delay (0.05)
+	do JavaScript "$('#lastname').val('your last name')" in front document
+	delay (0.05)
+	do JavaScript "$('#email').val('email')" in front document
+	delay (0.05)
+	do JavaScript "$('#govid').val('HKID')" in front document
+	delay (0.05)
+	#**************************************
+	#**************************************
+	#**************************************
+	do JavaScript "$('#pickup-time').find('.timeSlots-select .selection').click()" in front document
+	delay (0.3)
+	do JavaScript "$('#pickup-time').find('ul li:nth-child(11)').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#submit').click()" in front document
+	delay (1)
+	do JavaScript "$('#carrierDiv').find('.capacity-row-wrapper').find('li:nth-child(2)').click()" in front document
+	do JavaScript "$('#quantity').find('li[data-tag=2]').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#quantity').find('li[data-tag=2]').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#pickup-time').find('.timeSlots-select .selection').click()" in front document
+	delay (0.3)
+	do JavaScript "$('#pickup-time').find('ul li:nth-child(11)').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#submit').click()" in front document
+	delay (1)
+	do JavaScript "$('#carrierDiv').find('.capacity-row-wrapper').find('li:nth-child(3)').click()" in front document
+	do JavaScript "$('#quantity').find('li[data-tag=2]').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#quantity').find('li[data-tag=2]').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#pickup-time').find('.timeSlots-select .selection').click()" in front document
+	delay (0.3)
+	do JavaScript "$('#pickup-time').find('ul li:nth-child(11)').click()" in front document
+	delay (0.05)
+	do JavaScript "$('#submit').click()" in front document
+end tell

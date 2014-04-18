@@ -1,0 +1,11 @@
+tell application "Safari"
+	do JavaScript "$('#phoneNumber').attr('value','your phone')" in front document
+	#SMS CODE
+	do JavaScript "$('#reservationCode').attr('value','your sms code')" in front document
+	do JavaScript "$('#captchaAnswer').attr('value','')" in front document
+	delay (0.05)
+	#Captcha CODE
+	do JavaScript "$('#captchaAnswer').val('the captch ans')" in front document
+	do JavaScript "$('#continue').click()" in front document
+	
+end tell
